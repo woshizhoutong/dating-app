@@ -18,7 +18,7 @@ class WelcomeScreen extends React.Component {
         <View style={styles.logo}>
           <Image style={styles.image} source={AppStyles.iconSet.Logo} />
         </View>
-        <Text style={styles.title}>Find your soul mate</Text>
+        <Text style={styles.title}>Find your soul mate@@@LLL</Text>
         <Text style={styles.caption}>
           Match and chat with people you like from your area
         </Text>
