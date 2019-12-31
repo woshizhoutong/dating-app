@@ -99,3 +99,5 @@ RNTester/Pods/*
 # Visual studio
 .vscode
 .vs
+
+GoogleService-Info.plist
