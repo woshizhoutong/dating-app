@@ -150,7 +150,7 @@ class SignupScreen extends React.Component {
                 _this.setState({ progress: false });
               });
             }
- else {
+            else {
               this.setState({ progress: false });
               setTimeout(() => {
                 alert("An error occurred, please try again.");

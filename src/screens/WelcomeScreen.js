@@ -3,6 +3,7 @@ import Button from "react-native-button";
 import { Text, View, Image, StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import AppStyles from "../AppStyles";
+import FBLoginButton from "../components/FBLoginButton";
 
 class WelcomeScreen extends React.Component {
   static propTypes = {
@@ -28,6 +29,7 @@ class WelcomeScreen extends React.Component {
           onPress={() => this.props.navigation.navigate("Login")}>
           Log In
         </Button>
+        <FBLoginButton />
         <Button
           containerStyle={styles.signupContainer}
           style={styles.signupText}

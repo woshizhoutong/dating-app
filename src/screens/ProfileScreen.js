@@ -34,9 +34,7 @@ class ProfileScreen extends Component {
     this.state = {
       firstName: null,
       lastName: null,
-      bio: null,
       age: null,
-      school: null,
       gender: null,
       genderPre: null,
       email: null,
@@ -61,9 +59,7 @@ class ProfileScreen extends Component {
       const {
         firstName,
         lastName,
-        bio,
         age,
-        school,
         gender,
         genderPre,
         email
@@ -78,16 +74,8 @@ class ProfileScreen extends Component {
           self.setState({ lastName });
         }
 
-        if (bio) {
-          self.setState({ bio });
-        }
-
         if (age) {
           self.setState({ age });
-        }
-
-        if (school) {
-          self.setState({ school });
         }
 
         if (gender) {
@@ -110,9 +98,7 @@ class ProfileScreen extends Component {
     const {
       firstName,
       lastName,
-      bio,
       age,
-      school,
       gender,
       genderPre,
       email
@@ -121,9 +107,7 @@ class ProfileScreen extends Component {
     if (
       firstName &&
       lastName &&
-      bio &&
       age &&
-      school &&
       gender &&
       genderPre &&
       email
@@ -131,9 +115,7 @@ class ProfileScreen extends Component {
       const data = {
         firstName,
         lastName,
-        bio,
         age,
-        school,
         gender,
         genderPre,
         email
@@ -192,9 +174,7 @@ class ProfileScreen extends Component {
     const {
       firstName,
       lastName,
-      bio,
       age,
-      school,
       gender,
       genderPre,
       email,
@@ -258,18 +238,6 @@ class ProfileScreen extends Component {
                     onChangeText={text => this.setState({ lastName: text })}/>
                 </View>
                 <View style={styles.lineView} />
-                <View style={styles.itemView}>
-                  <Text style={styles.labelText}>Bio</Text>
-                  <TextInput
-                    underlineColorAndroid='transparent'
-                    style={[styles.text, { textAlign: "right" }]}
-                    editable={true}
-                    placeholderTextColor={AppStyles.colorSet.hairlineColor}
-                    placeholder='Say something about you'
-                    value={bio}
-                    onChangeText={text => this.setState({ bio: text })}/>
-                </View>
-                <View style={styles.lineView} />
                 <TouchableOpacity style={styles.itemView}>
                   <Text style={styles.labelText}>Age</Text>
                   <TextInput
@@ -282,18 +250,6 @@ class ProfileScreen extends Component {
                     value={age}
                     onChangeText={text => this.setState({ age: text })}/>
                 </TouchableOpacity>
-                <View style={styles.lineView} />
-                <View style={styles.itemView}>
-                  <Text style={styles.labelText}>School</Text>
-                  <TextInput
-                    underlineColorAndroid='transparent'
-                    style={[styles.text, { textAlign: "right" }]}
-                    editable={true}
-                    placeholderTextColor={AppStyles.colorSet.hairlineColor}
-                    placeholder='School'
-                    value={school}
-                    onChangeText={text => this.setState({ school: text })}/>
-                </View>
                 <View style={styles.lineView} />
                 <TouchableOpacity
                   style={styles.itemView}
