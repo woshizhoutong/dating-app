@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Instadating</string>
-    <string name="fb_app_id">2491064944347353</string>
-    <string name="fb_login_protocol_scheme">fb2491064944347353</string>
+    <string name="facebook_app_id">467425337544720</string>
+    <string name="fb_login_protocol_scheme">fb467425337544720</string>
+
+
 </resources>

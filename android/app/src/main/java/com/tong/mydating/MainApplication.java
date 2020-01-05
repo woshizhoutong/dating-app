@@ -1,4 +1,4 @@
-package com.instadating;
+package com.tong.mydating;
 
 import android.app.Application;
 import android.util.Log;

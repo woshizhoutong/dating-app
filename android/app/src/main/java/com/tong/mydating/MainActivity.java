@@ -1,4 +1,4 @@
-package com.instadating;
+package com.tong.mydating;
 
 import android.os.Bundle; // here
 import com.facebook.react.ReactActivity;
